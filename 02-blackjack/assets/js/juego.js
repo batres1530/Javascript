@@ -150,7 +150,7 @@ btnDetener.addEventListener('click', () => {
 
 
 btnNuevo.addEventListener('click', () => {
-    location.reload();
+    location.reload(); // renicia la pagian y hace que salga un nuevo juego 
    
 });
 
