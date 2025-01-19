@@ -45,26 +45,20 @@ class Persona{ // aqui se declara la clase Persona
 
 };
 
+class Heroes extends Persona{
+    
+    clan = 'sin clan';
 
-const spiderman = new Persona('Peter Parker', 'Spiderman', 'Soy tu amigable vecino spiderman');
-const iroman = new Persona('Tony Starck', 'Iroman', 'I am Iron Man');
+    constructor(nombre, codigo, frase){
+        super(nombre, codigo, frase);
+        this.clan = 'Los Avengers';
+    }
 
-// console.log(iroman);
+}
 
-// esto es el llamado a los métodos de la clase Persona
+
+//const spiderman = new Persona('Peter Parker', 'Spiderman', 'Soy tu amigable vecino spiderman');
+const spiderman = new Heroes();
 spiderman.quienSoy();
 
-// esto es el llamado a los métodos de la clase Persona
-spiderman.miFrase();
-//iroman.miFrase();
-spiderman.setComidaFavorita ='Pizza';
-// spiderman.comida = 'duende verde';
-// console.log(spiderman.getComidaFavorita);
 console.log(spiderman);
-// Persona._conteo= 2;
-console.log('Conteo estatico:', Persona._conteo);
-console.log(Persona.conteo);
-Persona.mensaje();
-
-Persona.PropiedadExterna = 'Esta es una propiedad externa';
-console.log(Persona);
