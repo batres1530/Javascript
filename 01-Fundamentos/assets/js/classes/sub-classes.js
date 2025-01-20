@@ -53,6 +53,7 @@ class Heroes extends Persona{
         super(nombre, codigo, frase);
         this.clan = 'Los Avengers';
     }
+    
 
 }
 
